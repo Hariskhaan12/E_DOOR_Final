@@ -77,7 +77,7 @@ let moveToQuestion=(Qid)=>{
   return (
     <div>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <div>
         <ProSideBar />
         <h1 style={{ textAlign: "center" }}>Global Questions</h1>

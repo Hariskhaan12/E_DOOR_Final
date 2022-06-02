@@ -14,14 +14,23 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 
-
-
 const drawerWidth = 240;
 
 export default function ClippedDrawer() {
   return (
     <Box sx={{ display: "flex" }} className="Box" style={{ height: "10vh" }}>
       <CssBaseline />
+      <AppBar
+        position="fixed"
+        sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      >
+        <Toolbar>
+          <Typography variant="h6" noWrap component="div">
+            Clipped drawer
+          </Typography>
+        </Toolbar>
+        <Typography>Login</Typography>
+      </AppBar>
       <Drawer
         variant="permanent"
         sx={{
@@ -35,7 +44,6 @@ export default function ClippedDrawer() {
       >
         <Toolbar />
         <Box sx={{ overflow: "auto" }}>
-          
           <List>
             {["Home", "Global Question", "Categories", "Tags"].map(
               (text, index) => (

@@ -4,12 +4,7 @@ import "./ProSideBar.scss";
 import ClippedDrawer from "../ClippedDrawer";
 
 const ProSideBar = () => {
-  return (
-    
-    <div className="SideBar">
-      <ClippedDrawer />
-    </div>
-  );
+  return <ClippedDrawer />;
 };
 
 export default ProSideBar;

@@ -4,9 +4,16 @@ import { BiUpvote } from "react-icons/bi";
 import TextField from "@mui/material/TextField";
 import './Question.scss'
 import Button from "@mui/material/Button";
-
+import {useState} from 'react';
 
 function Question() {
+
+  let initial={
+    Answer:"",
+    AnswerId:"",
+    Qid:""
+  }
+  const[Answer,setAnswer]=useState(initial);
   let AllQuestion = JSON.parse(localStorage.getItem("GlobalQuestionData"));
   let Questionid = localStorage.getItem("SelectedQuestion");
   let Question;
@@ -17,9 +24,20 @@ function Question() {
       }
   });
 
+
+  let InputHandler=(e)=>{
+   
+      setAnswer({Answer:e.target.value});
+  }
+
+  let SubmitAnswer=()=>{
+     let AnsId=Math.floor(Math.random() * 100000);
+    setAnswer({...Answer,AnswerId:AnsId,Qid:Questionid});
+  }
+
   return (
     <div>
-      {/* {console.log(Question)}; */}
+      {console.log(Answer)};
       <div>
         <Navbar />
       </div>
@@ -40,17 +58,21 @@ function Question() {
         </div>
 
         <div className="Answer">
-          <h3 style={{ marginTop: "5%", marginRight: "58%" }}>Your Answer:</h3>
+          <h3 style={{ marginTop: "5%", marginRight: "53%" }}>Your Answer:</h3>
           <div style={{marginLeft:"25%"}}>
             <TextField
+            onChange={InputHandler}
               id="outlined-search"
               type="search"
               style={{ width: "70%", marginTop: "1%" }}
             />
-            <Button variant="contained" style={{marginLeft:"4%",marginTop:"1rem"}}>Submit Asnwer</Button>
+            <Button variant="contained" style={{marginLeft:"4%",marginTop:"1rem"}} onClick={SubmitAnswer}>Submit Asnwer</Button>
           </div>
           <div className="TotalAnswer">
-              <h3>ANSWERS:</h3>
+              <h3 style={{marginRight:"50%",marginTop:"1rem"}}>ANSWERS:</h3>
+              <div className="AnswerSection">
+
+              </div>
           </div>
         </div>
       </div>
