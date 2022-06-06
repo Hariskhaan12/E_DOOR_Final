@@ -40,7 +40,15 @@ let PostQuestion=()=>{
 
 
 let SubmitQuestion=()=>{
-  let Uid=JSON.parse (localStorage.getItem("LoginDetails")).Uid;
+  let Uid;
+  if(localStorage.getItem("LoginDetails")!=null)
+  {
+    Uid=JSON.parse (localStorage.getItem("LoginDetails")).Uid;
+  }
+  else{
+    alert("Login First");
+    Navigate("/Auth");
+  }
   let localData=[];
   let oldData=JSON.parse( localStorage.getItem("GlobalQuestionData"));
    let random = Math.floor(Math.random() * 100000);
@@ -56,9 +64,6 @@ let SubmitQuestion=()=>{
     localStorage.setItem("GlobalQuestionData",JSON.stringify(oldData));
     // props.dispatch({type:ActionType.AddQuestion,payload:oldData})
   }
-
-
-
   handleClose();
 }
 
@@ -77,7 +82,7 @@ let moveToQuestion=(Qid)=>{
   return (
     <div>
 
-      {/* <Navbar /> */}
+      <Navbar />
       <div>
         <ProSideBar />
         <h1 style={{ textAlign: "center" }}>Global Questions</h1>
@@ -106,15 +111,15 @@ let moveToQuestion=(Qid)=>{
               />
               <div className="Question">
                 {/* <BsFillEyeFill> 0 Views</BsFillEyeFill> */}
-                <h3 className="title" onClick={() => moveToQuestion(val.Qid)}>
+                <h3 className="title" onClick={() => moveToQuestion(val.Qid)} style={{cursor:"pointer"}}>
                   <span>{`->`}</span> {val.Title}
                 </h3>
                 <p className="desc">
                   {val.Desc}
+                </p>
                   <span style={{ display: "flex", justifyContent: "flex-end" }}>
                     Views <strong style={{ marginLeft: "2%" }}>0</strong>
                   </span>
-                </p>
               </div>
             </>
           );

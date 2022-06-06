@@ -74,13 +74,12 @@ let JoinCommunitybtnStyle = {
       <section class="for-developers">
         <div class="container">
           <div class="section-head">
-            <h2 class="section-title">For developers, by developers</h2>
+            <h2 class="section-title">For Students, by Students</h2>
             <div class="section-line"></div>
             <p class="section-description">
-              Stack Overflow is an <a href="#">open community</a> for anyone
-              that codes. We help you get answers to your toughest coding
-              questions, share knowledge with your coworkers in private, and
-              find your next dream job.
+             Edoor is an <a href="#">open community</a> for anyone
+              who Wants Help. We help you get answers to your toughest 
+              questions, share knowledge with other Students
             </p>
           </div>
           <div class="options">
@@ -93,8 +92,7 @@ let JoinCommunitybtnStyle = {
               </div>
               <div class="option-title">Public Q&A</div>
               <div class="option-description">
-                Get answers to more than 16.5 million questions and give back by
-                sharing your knowledge with others.
+               Ask Question and help yourself in Resolving your Problems
                 <a href="#">Sign up</a> for an account.
               </div>
               <div class="option-button">
@@ -110,15 +108,11 @@ let JoinCommunitybtnStyle = {
                   alt="Private Q & A"
                 />
               </div>
-              <div class="option-title">Public Q&A</div>
+              <div class="option-title">Help Others</div>
               <div class="option-description">
-                Level up with Stack Overflow while you work. Share knowledge
-                privately with your coworkers using our flagship Q&A engine.
+               Help Others and get Points and Recognition
               </div>
               <div class="option-button">
-                <a href="#" class="option-link btn btn-orange">
-                  Try for free
-                </a>
               </div>
             </div>
             <div class="option">
@@ -128,16 +122,12 @@ let JoinCommunitybtnStyle = {
                   alt="Browse jobs"
                 />
               </div>
-              <div class="option-title">Public Q&A</div>
+              <div class="option-title">Earn Points</div>
               <div class="option-description">
-                Find the right job through high quality listings and search for
-                roles based on title, technology stack, salary, location, and
-                more.
+               Help others and get points and redeem them to earn Money.
               </div>
               <div class="option-button">
-                <a href="#" class="option-link btn btn-dark-blue">
-                  Find a job
-                </a>
+               
               </div>
             </div>
           </div>
@@ -209,7 +199,7 @@ let JoinCommunitybtnStyle = {
         <div class="container">
           <div class="teams-head">
             <h2 class="teams-title">
-              Unlock siloed knowledge with Stack Overflow for Teams
+              Unlock siloed knowledge with Edoorfor Teams
             </h2>
             <p class="teams-description">
               Wikis, chat messages, or formal documentation for knowledge
@@ -223,7 +213,7 @@ let JoinCommunitybtnStyle = {
             </div>
           </div>
 
-          <div class="teams-plan">
+          {/* <div class="teams-plan">
             <div class="card card-basic">
               <div class="card-header">
                 <h2 class="plan-type">Basic</h2>
@@ -306,8 +296,8 @@ let JoinCommunitybtnStyle = {
                   Get started
                 </a>
               </div>
-            </div>
-
+            </div> */}
+{/* 
             <div class="card card-enterprise">
               <div class="card-header">
                 <h2 class="plan-type">Enterprise</h2>
@@ -360,7 +350,7 @@ let JoinCommunitybtnStyle = {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div class="teams-footer">
             <a class="teams-footer-item">
@@ -394,7 +384,7 @@ let JoinCommunitybtnStyle = {
         </div>
       </section>
 
-      <section class="hire">
+      {/* <section class="hire">
         <div class="container">
           <div class="hire-content">
             <div class="hire-item">
@@ -410,7 +400,7 @@ let JoinCommunitybtnStyle = {
                 community of over 100 million developers and technologists.
               </p>
               <a href="#" class="btn btn-orange">
-                Stack Overflow Talent
+                Edoor Talent
               </a>
             </div>
             <div class="hire-item">
@@ -423,22 +413,22 @@ let JoinCommunitybtnStyle = {
               <p class="hire-item-description">
                 Use the world’s largest resource for people who code to help you
                 increase awareness and showcase your product or service across
-                Stack Overflow’s network of Q&A sites.{" "}
+                Edoor’s network of Q&A sites.{" "}
               </p>
               <a href="#" class="btn btn-orange">
-                Stack Overflow Advertising
+               Edoor Advertising
               </a>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="questions">
         <div class="container">
           <div class="questions-content">
             <div class="questions-header">
               <h3 class="question-title">
-                Questions are everywhere, answers are on Stack Overflow
+                Questions are everywhere, answers are on Edoor
               </h3>
             </div>
             <div class="questions-body">
@@ -516,7 +506,7 @@ let JoinCommunitybtnStyle = {
               </div>
             </div>
             <div class="questions-footer">
-              <h3 class="question-title">Learn and grow with Stack Overflow</h3>
+              <h3 class="question-title">Learn and grow with Edoor </h3>
               <div class="questions-grid">
                 <div class="questions-grid-item">
                   <div class="grid-item-img">
@@ -535,20 +525,7 @@ let JoinCommunitybtnStyle = {
                     professional.
                   </p>
                 </div>
-                <div class="questions-grid-item">
-                  <div class="grid-item-img">
-                    <img
-                      src="https://cdn.sstatic.net/Img/home/open-source.svg?v=847b604fd2ab"
-                      alt=""
-                    />
-                  </div>
-                  <h4 class="grid-item-title">Support open source</h4>
-                  <p class="grid-item-description">
-                    Reach users of your project by following tags, answering
-                    newcomer questions, and empowering experts in the community.
-                    <a href="#"> Read the curl project creator’s story.</a>
-                  </p>
-                </div>
+                
                 <div class="questions-grid-item">
                   <div class="grid-item-img">
                     <img
@@ -559,8 +536,7 @@ let JoinCommunitybtnStyle = {
                   <h4 class="grid-item-title">Acquire and share knowledge</h4>
                   <p class="grid-item-description">
                     Answer questions and <a href="#">gain insights</a> from an
-                    audience of developers using your technology on Stack
-                    Overflow.
+                    audience of developers using your technology on Edoor 
                   </p>
                 </div>
                 <div class="questions-grid-item">
@@ -582,7 +558,7 @@ let JoinCommunitybtnStyle = {
           </div>
         </div>
       </section>
-
+{/* 
       <section class="jobs">
         <div class="container">
           <div class="jobs-content">
@@ -638,7 +614,7 @@ let JoinCommunitybtnStyle = {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer class="footer">
         <img
@@ -654,7 +630,7 @@ let JoinCommunitybtnStyle = {
             <div class="footer-nav">
               <div class="footer-nav-col">
                 <div class="footer-links-title">
-                  <a href="#">Stack Overflow</a>
+                  <a href="#">Edoor</a>
                 </div>
                 <ul class="footer-links">
                   <li class="footer-link-item">
